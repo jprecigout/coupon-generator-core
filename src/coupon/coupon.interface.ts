@@ -2,8 +2,8 @@ import { Document } from 'mongoose';
 
 export interface Coupon extends Document {
   code: string;
-  isPercent: number;
+  isPercent: boolean;
   amount: number;
-  expireDate: string;
+  expireDate: Date;
   activate: boolean;
 }

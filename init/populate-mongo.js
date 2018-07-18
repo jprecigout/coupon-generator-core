@@ -1,1 +1,1 @@
-curl -d '{"isPercent":false, "amount": 5, "activate": true}' -H "Content-Type: application/json" -X POST http://localhost:3000/create
+curl -d '{"isPercent":false, "amount": 5, "activate": true}' -H "Content-Type: application/json" -X POST http://localhost:3000/coupon/create
