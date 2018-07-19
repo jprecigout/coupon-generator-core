@@ -2,10 +2,8 @@
 
 ## Description
 
-![Screenshot of coupon]
+![Screenshot of coupon](https://github.com/jprecigout/coupon-generator-core/blob/master/coupon.png)
 
-<p align="center">(https://github.com/jprecigout/coupon-generator-core/blob/master/coupon.png)
-</p>
 Générateur de coupon de réduction
 
 ## Installation via docker
