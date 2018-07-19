@@ -2,8 +2,6 @@
 
 ## Description
 
-![Screenshot of coupon](https://github.com/jprecigout/coupon-generator-core/blob/master/coupon.png)
-
 <p align="center">
     <img src="https://github.com/jprecigout/coupon-generator-core/blob/master/coupon.png">
 </p>
