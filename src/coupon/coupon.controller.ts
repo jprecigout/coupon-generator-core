@@ -18,7 +18,7 @@ export class CouponController {
   @Get('/edit/:id')
   async getCoupon(@Param('id') id): Promise<Coupon> {
     return await this.couponService.getCoupon(id).catch(error => {
-      throw new HttpException('Personne non trouvée', HttpStatus.NOT_FOUND);
+      throw new HttpException('Coupon not found', HttpStatus.NOT_FOUND);
     });
   }
 
