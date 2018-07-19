@@ -2,8 +2,9 @@
 
 ## Description
 
-<p align="center">
-![Screenshot of coupon](https://github.com/jprecigout/coupon-generator-core/blob/master/coupon.png)
+![Screenshot of coupon]
+
+<p align="center">(https://github.com/jprecigout/coupon-generator-core/blob/master/coupon.png)
 </p>
 Générateur de coupon de réduction
 
