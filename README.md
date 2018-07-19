@@ -4,7 +4,7 @@
 
 ![Screenshot of coupon](https://github.com/jprecigout/coupon-generator-core/blob/master/coupon.png)
 
-<p style="align:center">
+<p align="center">
     <img src="https://github.com/jprecigout/coupon-generator-core/blob/master/coupon.png">
 </p>
 
