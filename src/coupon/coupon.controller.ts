@@ -5,8 +5,6 @@ import {
   Post,
   Body,
   Delete,
-  HttpException,
-  HttpStatus,
 } from '@nestjs/common';
 import { CouponService } from './coupon.service';
 import { Coupon } from './coupon.interface';
@@ -17,23 +15,21 @@ export class CouponController {
 
   @Get('/edit/:id')
   async getCoupon(@Param('id') id): Promise<Coupon> {
-    return await this.couponService.getCoupon(id).catch(error => {
-      throw new HttpException('Coupon not found', HttpStatus.NOT_FOUND);
-    });
+    return this.couponService.getCoupon(id);
   }
 
   @Get('/all')
   async getAllCoupon() {
-    return await this.couponService.getAllCoupon();
+    return this.couponService.getAllCoupon();
   }
 
   @Post('/create')
   async create(@Body() coupon): Promise<Coupon> {
-    return await this.couponService.create(coupon);
+    return this.couponService.create(coupon);
   }
 
   @Delete(':id')
   async delete(@Param('id') id) {
-    return await this.couponService.delete(id);
+    return this.couponService.delete(id);
   }
 }

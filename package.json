@@ -11,7 +11,7 @@
     "prestart:prod": "rm -rf dist && tsc",
     "start:prod": "node dist/main.js",
     "start:hmr": "node dist/server",
-    "test": "jest",
+    "test": "jest --config=jest.json",
     "test:cov": "jest --coverage",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "webpack": "webpack --config webpack.config.js"
@@ -21,6 +21,7 @@
     "@nestjs/core": "^5.0.0",
     "@nestjs/mongoose": "^5.0.0",
     "fastify-formbody": "^2.0.0",
+    "moment": "^2.22.2",
     "mongoose": "^5.2.4",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^6.0.0",

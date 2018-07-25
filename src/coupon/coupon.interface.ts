@@ -1,6 +1,8 @@
 import { Document } from 'mongoose';
+import { ObjectId } from 'bson';
 
-export interface Coupon extends Document {
+export class Coupon extends Document {
+  _id: ObjectId;
   code: string;
   isPercent: boolean;
   amount: number;
