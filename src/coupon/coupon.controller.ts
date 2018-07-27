@@ -1,4 +1,12 @@
-import { Controller, Get, Param, Post, Body, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Param,
+  Post,
+  Body,
+  Delete,
+  HttpCode,
+} from '@nestjs/common';
 import { CouponService } from './coupon.service';
 import { Coupon } from './coupon.interface';
 
@@ -12,11 +20,12 @@ export class CouponController {
   }
 
   @Get('/coupons')
-  async getAllCoupon() {
+  async getAllCoupon(): Promise<Coupon[]> {
     return this.couponService.getAllCoupon();
   }
 
   @Post('/coupons')
+  @HttpCode(201)
   async create(@Body() coupon): Promise<Coupon> {
     return this.couponService.create(coupon);
   }
